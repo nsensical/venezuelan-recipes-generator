@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI VENEZUELAN RECIPES GENERATOR</title>
   </head>
@@ -15,7 +16,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter an ingredient (i.e: rum, cheese, etc)"
@@ -25,21 +26,27 @@
             class="form-text"
           />
 
-          <input type="submit" class="button" />
+          <input type="submit" class="submit-button" />
         </form>
 
-        <div class="recipe">QUESILLO <br />Ingredients:</div>
+        <div class="recipe" id="recipe"></div>
       </main>
 
       <footer>
         coded by
         <a href="https://github.com/nsensical" target="_blank">Isaura Manzano</a
         >, hosted on
-        <a href="https://github.com/nsensical/venezuelan-recipes-generator"
+        <a
+          href="https://github.com/nsensical/venezuelan-recipes-generator"
+          target="_blank"
           >github</a
         >
         & deployed at
-        <a href="https://venezuelanrecipesgenerator.netlify.app/">netlify</a>
+        <a
+          href="https://venezuelanrecipesgenerator.netlify.app/"
+          target="_blank"
+          >netlify</a
+        >
       </footer>
     </div>
   </body>
