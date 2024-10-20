@@ -14,13 +14,13 @@ function generateRecipe(event) {
   let instructionsInput = document.querySelector("#instructions");
   let apiKey = "abdtf489166e9o460ad2e43465ab3d66";
   let context =
-    "You are a knowledgeable assistant with vast experience in international cuisine. Generate short and concise Venezuelan recipes making sure to follow the instructions, using basic HTML and separating each line with a <br />.";
+    "You are a knowledgeable assistant with vast experience in international cuisine. Generate short and concise Venezuelan recipes in basic html without markdown, making sure to follow the instructions, and separating each line with a <br />.";
   let prompt = `Instructions: Generate a Venezuelan recipe about ${instructionsInput.value}.`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
-  recipeElement.innerHTML = `<div class="generating">⏳ Wait a moment... Searching for a good recipe containing ${instructionsInput.value}</div>`;
+  recipeElement.innerHTML = `<div class="generating">⏳ Wait a moment... Searching for a good recipe containing "${instructionsInput.value}"...</div>`;
 
   axios.get(apiURL).then(displayRecipe);
 }
