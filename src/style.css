@@ -1,0 +1,81 @@
+/** @format */
+
+body {
+  background: #e0c9cb;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: #558983;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #558983;
+  text-transform: uppercase;
+}
+
+form {
+  padding: 30px;
+  background-color: #d19ea4;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form-text {
+  padding: 14px;
+  border: 2px solid rgba(209, 158, 164, 0.8);
+  width: 60%;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #558983;
+}
+
+.button {
+  margin-left: 10px;
+  background-color: #e0c9cb;
+  color: #558983;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: smaller;
+  border-radius: 10px;
+  padding: 14px 24px;
+  width: 150px;
+  border: 2px solid rgba(209, 158, 164, 0.8);
+}
+
+.recipe {
+  font-size: 16px;
+  background-color: #d19ea4;
+  padding: 20px;
+  line-height: 2;
+  border-left: 4px solid #558983;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
+}
+
+footer {
+  margin: 30px auto;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+}
